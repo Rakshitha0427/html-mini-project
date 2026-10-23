@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title> Form Validation Example</title>
+<link rel ="stylesheet" href="registration-style.css">
+</head>
+<body>
+<h2> Registration Form</h2>
+<form onsubmit="return validateForm()">
+<label>Name:</label>
+<input type ="text" id="name"/>
+<div id="nameError" class="error">
+</div>
+	<lable>Gender:</lable>
+    	   <div class="radio-group">
+		<input type="radio" name="gender" value ="Male"> Male
+	</div>
+
+
+
+	  <div class="radio-group">
+		<input type="radio" name="gender" value ="Female"> Female
+	</div>
+
+	<div id ="genderError" class="error"></div>
+	  <label>Country :</label>
+	<select id="country">
+		<option value="">----Select Country-----</option>
+		<option value="India">India</option>
+		<option value="USA">USA</option>
+		<option value="UK">UK</option>
+	</select>
+
+
+	<div id ="countryError" class="error"></div>
+	    <label> About You:</lable>
+		<textarea id="about" rows="4"></textarea>
+		<div id="aboutError" class="error"></div>
+	</label>
+
+		<input type="checkbox" id="terms"/> Iagree to terms and conditions</label>
+			<div id="termsError" class="error"></div>
+			<button type="Submit">Submit</button>
+	</form>
+
+<script src="registration-validation.js"></script>
+</body>
+</html>
